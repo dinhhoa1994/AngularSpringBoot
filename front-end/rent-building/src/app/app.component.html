@@ -1,0 +1,384 @@
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">-->
+<!--  <a class="navbar-brand" href="#"><span style="color: aqua">Rent</span><div class="spinner-border text-warning" role="status">-->
+<!--    <span class="sr-only">Loading...</span> <span style="color: coral">Building</span></div></a>-->
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+
+<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--    <ul class="navbar-nav mr-auto">-->
+<!--      <li class="nav-item active" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >-->
+<!--        <a class="nav-link" [routerLink]="['/']" >Home <span class="sr-only">(current)</span></a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" [routerLink]="['equipment-list']">Liên Hệ</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item dropdown">-->
+<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--          Xem thêm-->
+<!--        </a>-->
+<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--          <a class="dropdown-item" href="#">Action</a>-->
+<!--          <a class="dropdown-item" href="#">Another action</a>-->
+<!--          <div class="dropdown-divider"></div>-->
+<!--          <a class="dropdown-item" href="#">Something else here</a>-->
+<!--        </div>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--    <i class="fas fa-bell fas-nav" style="color: red"></i>-->
+<!--    <i class="fas fa-sms fas-nav" style="color: yellow"></i>-->
+<!--    <i class="fas fa-th-large fas-nav " style="color: green"></i>-->
+<!--    <img src="../assets/image/wp2752752.jpg" width="30" height="30" alt="" style="border-radius: 50px">-->
+<!--  </div>-->
+<!--</nav>-->
+<!--<div class="container-fluid">-->
+<!--  <div class="row">-->
+<!--    <div class="col-md-2 col-lg-2 left ">-->
+<!--      <ul class="list-group ">-->
+<!--        <li routerLinkActive="active" class="list-group-item active hover-li ">Danh mục chức năng</li>-->
+<!--        <li class="list-group-item hover-li"><a [routerLink]="['/customers']"><i class="fas fa-users"></i>&nbsp;Danh sách Khách Hàng</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/equipments']"><i class="fas fa-tools"></i>&nbsp;Danh sách Trang thiết bị</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/contracts']"><i class="fas fa-file-signature"></i>&nbsp;Danh sách hợp đồng</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="fas fa-building"></i>&nbsp;Danh sách tòa nhà</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon far fa-calendar-alt"></i>&nbsp;Lịch</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-copy"></i>&nbsp;Sao chép</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-chart-pie"></i>&nbsp;Thống kê</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon far fa-envelope"></i>&nbsp;Hộp thư</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-table"></i>&nbsp;Danh sách tòa nhà</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon far fa-image"></i>&nbsp;Hình ảnh</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon far fa-plus-square"></i>&nbsp;Danh sách tòa nhà</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-file"></i>&nbsp;Thư mục</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-circle"></i>&nbsp;Giám đốc</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-circle"></i>&nbsp;Thư ký</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-circle"></i>&nbsp;Nhân viên</a></li>-->
+<!--        <li class="list-group-item hover-li" ><a [routerLink]="['/buildings']"><i class="nav-icon fas fa-circle"></i>&nbsp;Khách hàng</a></li>-->
+
+
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <div class="col-md-10 col-lg-10 content">-->
+<!--      <router-outlet></router-outlet>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<footer class="main-footer">-->
+<!--  <strong >Copyright © 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>-->
+<!--  All rights reserved.-->
+<!--  <div class="float-right d-none d-sm-inline-block">-->
+<!--    <b>Version</b> 3.0.3-->
+<!--  </div>-->
+<!--</footer>-->
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-light ml-auto mb-2 bg-light">
+  <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="myNavbar">
+    <div class="container-fluid">
+      <div class="row">
+        <!--  sidebar  -->
+        <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+          <a href="#"
+             class="navbar-brand d-block mx-auto text-center text-white py-2 mb-2 bottom-border"><img
+            src="../assets/image/bulding2.png" height="80" width="85"/></a>
+<!--          <div class="bottom-border pb-3">-->
+<!--            <img src="../assets/image/anh2.jpg" width="50" height="50" class="rounded-circle mr-3" alt="">-->
+<!--            <a href="#" class="text-white">Ngoc Tan</a>-->
+<!--          </div>-->
+          <ul class="navbar-nav flex-column mt-4 myDIV ">
+<!--            <li routerLinkActive="active" class="nav-item sidebar-link ">-->
+<!--              <a href="" class="nav-link text-white py-2 mb-2 current sidebar-title"><i-->
+<!--              class="fa fa-home icon-size text-light fa-lg mr-3"></i>Rent Building</a>-->
+<!--            </li>-->
+
+            <li  (click)="onClick(1)"   [ngClass]="{'active1': tab==='tab1'}" class="nav-item  sidebar-link ">
+              <a [routerLink]="['/customers']" class="nav-link text-white py-2 mb-2 sidebar-title"><i
+              class="fa fa-users text-light fa-lg mr-3"></i>Danh sách khách hàng</a>
+            </li>
+
+            <li (click)="onClick(2)"   [ngClass]="{'active1': tab==='tab2'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/equipments-building']" class="nav-link text-white py-2 mb-2 sidebar-title"><i
+              class="fa icon-size fa-wrench text-light fa-lg mr-3"></i>Danh sách thiết bị</a>
+            </li>
+
+            <li (click)="onClick(3)"   [ngClass]="{'active1': tab==='tab3'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/contracts/paging']" class="nav-link text-white py-2 mb-2 sidebar-title"><i
+              class="fa icon-size fa-pencil-square-o text-light fa-lg mr-3"></i>Danh sách hợp đồng</a>
+            </li>
+
+            <li  (click)="onClick(4)"   [ngClass]="{'active1': tab==='tab4'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/buildings']" class="nav-link text-white py-2 mb-2 sidebar-title"><i
+              class="fa fa-building icon-size text-light fa-lg mr-3"></i>Danh sách tòa nhà</a>
+            </li>
+
+            <li (click)="onClick(5)"   [ngClass]="{'active1': tab==='tab5'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/floors']" class="nav-link text-white py-2 mb-2 sidebar-title"><i
+              class="fa fa-cubes icon-size text-light fa-lg mr-3"></i>Danh sách tầng</a>
+            </li>
+
+            <li (click)="onClick(6)"   [ngClass]="{'active1': tab==='tab6'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/grounds']" class="nav-link text-white py-2 mb-2 sidebar-title"><i
+              class="fa fa-university icon-size text-light fa-lg mr-3"></i>Danh sách mặt bằng</a>
+            </li>
+
+            <li  (click)="onClick(7)"   [ngClass]="{'active1': tab==='tab7'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/employees']" class="nav-link text-white py-2 mb-2 sidebar-title">
+                <i class="fa fa-desktop  icon-size text-light fa-lg mr-3" aria-hidden="true"></i>Nhân viên văn phòng</a>
+            </li>
+
+            <li  (click)="onClick(8)"   [ngClass]="{'active1': tab==='tab8'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/employees/paging1']" class="nav-link text-white py-2 mb-2 sidebar-title">
+                <i class="fa fa-coffee  icon-size text-light fa-lg mr-3" aria-hidden="true"></i>Nhân viên phục vụ</a>
+            </li>
+
+            <li (click)="onClick(9)"   [ngClass]="{'active1': tab==='tab9'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/services']" class="nav-link text-white py-2 mb-2 sidebar-title">
+                <i class="fa fa-handshake-o icon-size text-light fa-lg mr-3" aria-hidden="true"></i>Danh sách dịch vụ</a>
+            </li>
+
+
+            <li  (click)="onClick(10)"   [ngClass]="{'active1': tab==='tab10'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/reports/search']" class="nav-link text-white py-2 mb-2 sidebar-title"><i
+              class="fa fa-file icon-size text-light fa-lg mr-3 "></i>Báo cáo</a>
+            </li>
+
+            <li  (click)="onClick(11)"   [ngClass]="{'active1': tab==='tab11'}" class="nav-item sidebar-link">
+              <a [routerLink]="['/reports/employee']" class="nav-link text-white py-2 mb-2 sidebar-title">
+                <i class="fa fa-money icon-size text-light fa-lg mr-3 " aria-hidden="true"></i>Lương nhân viên</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!--end of sidebar  -->
+
+        <!-- top-nav-->
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+          <div class="row align-items-center">
+            <div class="col-md-9">
+<!--              <h4 class="text-light text-uppercase mb-0">Rent Building</h4>-->
+              <a class="navbar-brand" href="#"><span style="color: aqua">RENT</span><span style="color: coral">BUILDING</span></a>
+            </div>
+<!--            <div class="col-md-5">-->
+<!--              <form action="">-->
+<!--                <div class="input-group">-->
+<!--                  <input type="text" class="form-control search-input" placeholder="Search" >-->
+<!--                  <button type="button" class="btn btn-secondary search-button"><i-->
+<!--                    class="fa fa-search text-danger"></i></button>-->
+<!--                </div>-->
+<!--              </form>-->
+<!--            </div>-->
+            <div class="col-md-3">
+              <ul class="navbar-nav">
+                <li class="nav-item icon-parent"><a href="" class="nav-link icon-bullet"><i
+                  class="fa fa-comments text-light fa-lg"></i></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i
+                  class="fa fa-bell text-light fa-lg"></i></a></li>
+                <li class="nav-item"><a [routerLink]="['/login']" class="nav-link"><i
+                  class="fa fa-user text-light fa-lg"></i></a></li>
+                <li class="nav-item ml-md-auto"><a href="" data-toggle="modal" data-target="#sign-out"
+                                                   class="nav-link"><i
+                  class="fa fa-sign-out text-danger fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end of top-nav-->
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--end of navbar-->
+<!--   modal-->
+<div class="modal fade" id="sign-out">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Want to leave?</h4>
+        <button type="button" class="close" data-dismiss="modal"> &times;</button>
+      </div>
+      <div class="modal-body">
+        Press logout to leave
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Stay here</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end  of  modal-->
+<section>
+  <div class="container-fluid">
+    <div class="row mb-5">
+      <div class="col-xl-10 col-lg-9 col-md-8  ml-auto">
+        <div class="row align-items-center ">
+          <div class="col-12 mb-xl-0">
+
+            <router-outlet></router-outlet>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end of table-->
+<!--activities-->
+<!--<section>-->
+<!--  <div class="container-fluid">-->
+<!--    <div class="row align-items-center mb-5">-->
+<!--      <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">-->
+<!--        <div class="row">-->
+<!--          <div class="col-xl-7">-->
+<!--            <h4 class="text-muted mb-4">Recents Customer Activities</h4>-->
+<!--            <div id="accordion">-->
+<!--              <div class="card">-->
+<!--                <div class="card-header">-->
+<!--                  <button class="btn btn-block bg-secondary text-light text-left"-->
+<!--                          data-toggle="collapse" data-target="#collapseOne">-->
+<!--                    <img class="mr-3 rounded" src="../assets/image/anh2.jpg" alt="" width="50">-->
+<!--                    Tan Tran post new comment-->
+<!--                  </button>-->
+<!--                </div>-->
+<!--                <div class="collapse show" id="collapseOne">-->
+<!--                  <div class="card-body">-->
+<!--                    How to pass Module 4 ???-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="card">-->
+<!--                <div class="card-header">-->
+<!--                  <button class="btn btn-block bg-secondary text-light text-left"-->
+<!--                          data-toggle="collapse" data-target="#collapseTwo">-->
+<!--                    <img class="mr-3 rounded" src="../assets/image/hung.png" alt="" width="50">-->
+<!--                    Minh Hung post new comment-->
+<!--                  </button>-->
+<!--                </div>-->
+<!--                <div class="collapse" id="collapseTwo" data-parent="#accordion">-->
+<!--                  <div class="card-body">-->
+<!--                  Tham Ngan-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="card">-->
+<!--                <div class="card-header">-->
+<!--                  <button class="btn btn-block bg-secondary text-light text-left"-->
+<!--                          data-toggle="collapse" data-target="#collapseThree">-->
+<!--                    <img class="mr-3 rounded" src="../assets/image/hoa.png "alt="" width="50">-->
+<!--                    Dinh Hoa post new comment-->
+<!--                  </button>-->
+<!--                </div>-->
+<!--                <div class="collapse" id="collapseThree">-->
+<!--                  <div class="card-body">-->
+<!--                    Tham Ngan-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card">-->
+<!--                <div class="card-header">-->
+<!--                  <button class="btn btn-block bg-secondary text-light text-left"-->
+<!--                          data-toggle="collapse" data-target="#collapseFour">-->
+<!--                    <img class="mr-3 rounded" src="../assets/image/quoc.jpg" alt="" width="50">-->
+<!--                    Dinh Quoc post new comment-->
+<!--                  </button>-->
+<!--                </div>-->
+<!--                <div class="collapse" id="collapseFour">-->
+<!--                  <div class="card-body">-->
+<!--                    :V :V :V-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-xl-5 mt-5">-->
+<!--            <div class="card rounded">-->
+<!--              <div class="card-body">-->
+<!--                <h5 class="text-muted text-center mb-4">Quick Status Post</h5>-->
+<!--                <ul class="list-inline text-center py-3" >-->
+<!--                  <li class="list-inline-item mr-4">-->
+<!--                    <a href="">-->
+<!--                      <i class="fa fa-pencil"></i>-->
+<!--                      <span class="h6 text-muted">Status</span>-->
+<!--                    </a>-->
+<!--                  </li>-->
+<!--                  <li class="list-inline-item mr-4">-->
+<!--                    <a href="">-->
+<!--                      <i class="fa fa-camera text-info"></i>-->
+<!--                      <span class="h6 text-muted">Photo</span>-->
+<!--                    </a>-->
+<!--                  </li>-->
+<!--                  <li class="list-inline-item mr-4">-->
+<!--                    <a href=""><i class="fa fa-map-marker text-primary"></i>-->
+<!--                      <span class="h6 text-muted">Check-in</span>-->
+<!--                    </a>-->
+<!--                  </li>-->
+<!--                </ul>-->
+<!--                <form action="">-->
+<!--                  <div class="form-group">-->
+<!--                    <input type="text" class="form-control py-2 mb-3" placeholder="What your Status??" >-->
+<!--                    <button type="button" class="btn btn-block text-uppercase font-weight-bold text-light bg-info py-2 mb-5">Submit Post</button>-->
+<!--                  </div>-->
+<!--                </form>-->
+<!--                <div class="row">-->
+<!--                  <div class="col-6">-->
+<!--                    <div class="card bg-light">-->
+<!--                      <i class="fa fa-calendar fa-4x text-warning d-block m-auto py-3"></i>-->
+<!--                    </div>-->
+<!--                    <div class="card-body">-->
+<!--                      <p class="card-text text-center font-weight-bold text-uppercase">Mon,may 26</p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-6">-->
+<!--                    <div class="card bg-light">-->
+<!--                      <i class="fa fa-clock-o fa-4x text-danger d-block m-auto py-3"></i>-->
+<!--                    </div>-->
+<!--                    <div class="card-body">-->
+<!--                      <p class="card-text text-center font-weight-bold text-uppercase">3:30 pm </p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--end of activities-->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+        <div class="row border-top pt-3">
+          <div class="col-lg-6 text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item mr-2">
+                <a href="" class="text-dark">CodeAndCreate</a>
+              </li>  <li class="list-inline-item mr-2">
+              <a href="" class="text-dark">About</a>
+            </li>  <li class="list-inline-item mr-2">
+              <a href="" class="text-dark">Support</a>
+            </li>
+              <li class="list-inline-item mr-2">
+                <a href="" class="text-dark">Blog</a>
+              </li>
+
+            </ul>
+
+          </div>
+          <div class="col-lg-6 text-center">
+            <p>&copy; 2020 Copyright . Made with  by <span class="text-success"><i class="fa fa-heart text-danger"></i>TNT<i class="fa fa-heart text-danger"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer-->
+
